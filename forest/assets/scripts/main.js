@@ -4,8 +4,8 @@ function moveLayer(event) {
 	const layers = document.querySelectorAll('.layer_parallax')
 	const { clientX, clientY } = event
 
-	layers[6].style.top = `calc(50% - ${(clientY / 50)}px)`
-	layers[6].style.left = -(clientX / 300) +'px'
+	// layers[6].style.top = `calc(50% - ${(clientY / 50)}px)`
+	// layers[6].style.left = -(clientX / 300) +'px'
 
 	layers[5].style.top = `calc(50% - ${(clientY / 30)}px)`
 	layers[5].style.left = (clientX / 200) +'px'
@@ -22,11 +22,11 @@ function moveLayer(event) {
 	layers[2].style.top = `calc(50% - ${(clientY / 30)}px)`
 	layers[2].style.left = -(clientX / 500) +'px'
 
-	layers[1].style.top = `calc(50% + ${(clientY / 20)}px)`
+	layers[1].style.top = `calc(50% - ${(clientY / 20)}px)`
 	layers[1].style.left = (clientX / 500) +'px'
 
-	layers[1].style.top = `calc(50% - ${(clientY / 50)}px)`
-	layers[1].style.left = -(clientX / 600) +'px'
+	layers[0].style.top = `calc(50% + ${(clientY / 50)}px)`
+	layers[0].style.left = -(clientX / 600) +'px'
 }
 
 
